@@ -1,0 +1,30 @@
+{
+  "name": "franc-bin",
+  "version": "0.1.0",
+  "description": "Franc CLI... as a binary file",
+  "main": "node_modules/franc-cli/index.js",
+  "bin": "node_modules/franc-cli/index.js",
+  "author": "Alessio Vertemati",
+  "license": "MIT",
+  "dependencies": {
+    "franc": "^3.1.1",
+    "franc-cli": "^3.0.1"
+  },
+  "devDependencies": {
+    "pkg": "~4.2.0"
+  },
+  "scripts": {
+    "run": "franc",
+    "production": "pkg --out-dir=dist . "
+  },
+  "pkg": {
+    "assets": [
+      "package.json"
+    ],
+    "targets": [
+      "node8-macos-x64",
+      "node8-linux-x64",
+      "node8-win-x64"
+    ]
+  }
+}
