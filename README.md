@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/avvertix/franc-bin.svg?branch=master)](https://travis-ci.org/avvertix/franc-bin)
+
 # Franc as Binary
 
 The [Franc](https://github.com/wooorm/franc) Natural Language Detection library inside a single executable with no dependencies.
