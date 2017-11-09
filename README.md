@@ -6,7 +6,7 @@ The [Franc](https://github.com/wooorm/franc) Natural Language Detection library 
 
 ## Getting Started
 
-Download the pre-built binary for your Operating System from the [Release page](https://github.com/avvertix/tus-client-cli/releases/latest).
+Download the pre-built binary for your Operating System from the [Release page](https://github.com/avvertix/franc-bin/releases/latest).
 
 ```bash
 franc-bin [options] <string>
