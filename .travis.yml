@@ -1,37 +1,25 @@
 language: node_js
-
 node_js:
 - '10'
-
 branches:
   only:
   - master
   - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/"
   - "/^\\d+\\.\\d+?$/"
-
 notifications:
   email:
     on_success: never
-
 install:
-  - travis_retry npm ci
-
+- travis_retry npm ci
 script:
-  - npm run production
-  - ./dist/franc-bin-linux "let's try the build with a simple string"
-
+- npm run production
+- ./dist/franc-bin-linux "let's try the build with a simple string"
 before_deploy: npm run production
-
 deploy:
   provider: releases
   api_key:
-    secure: CyS6w53hu5zYCFZT2Z72mQ5oojE73SS4OYkQCQ8fKb2Dw4du0lzCUM4L0qg2je4GavTkZiq3JGypcsTw7lUXwDWKjlmmsIdJWa1QT3eP6Uh9RbpO6P81KGis4e2BY7vjruK2AwCxyd41h0izA2jmUlvImzZ1FK5DTRC9o662ZZ9LnD8CPPrQTgsfFDeP+j+h5D7JdOYiuMTdcFyVJ0KHaPwIT7uct8nIpPq4i42oYwlORLmw82LtKucFxGIvO85+aKizCichQigYduY7GOl/ZT3bDzG/76uBlIpuHDhRY8s5ANqF49JA8yVsf6gw7pW27iMmHpVu3of0+Fw5bKv91w3G6+BCSm4XlPPSr7REB0CJcHhwPXN68qAuHukcHCL8DQZhp93fV09Zsjc62pxrJ9ZyzOmxLlA8Y38YA/KqNfXiBJICJHWfewR0I9OAUB4XC3FsZCnEu7MK7Qx7NrZtoEkfNPCbshCXjl7VxXnJx3hhCnT5ASPoHjzFMdupO96PvoHbgD8GbstmCRKiWYm5Q08HFHGu4vBh020M6tIPgWLDZ/p0Skrjk2nJqGutPHBfelNStjR8VG3odbY7u5Wk0ZQJcgl5zUVX7l/OxxLPeGjUfmokzC8IIB0UyS/LILLsSEOJatoKDm8suJq8RwpXQE40WD47/KhZl+C0AblCEPg=
-  skip_cleanup: true
+    secure: pwJZDd+vmdtd/HolUvb0qizk+SBiPXKnQXIq0Vg0Uv4v46JAeiksARcmOE0VcfcXnGBNAZX25Nb1xKrXj5l7Y5ZMAQWJgwXhgJL1oLxrpOr0neie57y2PqFIKRatk9ws7IzWuMsACCx2FTVVIQAm2grKbsF9JltAULYRd91PrQ+Kvj18zfHNAAajnPac0K2poQ3D+Vjt1FsBOjB+5KK2tbhBMxHla/s9K71bOaqmhJB7maB75JUE6z4Xtp6/brEkmColtce1M9pM0xixj7lTlfu5at22YLfeWIYAb808UyPog5rTcKPoBrkyAc8oc42rzeIKY3uKX5f0PyiPCt0yQBSqV3zUvUrS1HyGjaPG1lhm+QLPQfMjlaAC3BFeiymHnnVtJGw7GDVzmwgdf9kCVI3oQnrDNE6cpaKwc/zVVRlWDHjEMxPCnASdrYX16NdU/EPwYKiyl5q+GqZF98RwqI4Fa6UhJEnc/QsU9GtU18pgMYcIrAv3NISoi3CihynDc5vP6xocPxMu3WjCtDTtmzd4wlb24GgNkO4uCWTEO6URVtx2a7NklWMfYma+Smu6mm0GXVnmhQLdgvwFCLnD6EnsFMRYMSz0U8TW5qeGWsQejzRfUqYbVVk9tzx93YMOP5LkQ4cQH8sOlZAOSbjJ/i3hXJ2R05j5szg4swv6Kmk=
   file: 
     - "dist/franc-bin-linux"
-    - "dist/franc-bin-macos"
-    - "dist/franc-bin-win.exe"
   on:
     repo: avvertix/franc-bin
-    tags: true
-    branch: deploy
