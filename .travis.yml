@@ -29,6 +29,8 @@ deploy:
     secure: pwJZDd+vmdtd/HolUvb0qizk+SBiPXKnQXIq0Vg0Uv4v46JAeiksARcmOE0VcfcXnGBNAZX25Nb1xKrXj5l7Y5ZMAQWJgwXhgJL1oLxrpOr0neie57y2PqFIKRatk9ws7IzWuMsACCx2FTVVIQAm2grKbsF9JltAULYRd91PrQ+Kvj18zfHNAAajnPac0K2poQ3D+Vjt1FsBOjB+5KK2tbhBMxHla/s9K71bOaqmhJB7maB75JUE6z4Xtp6/brEkmColtce1M9pM0xixj7lTlfu5at22YLfeWIYAb808UyPog5rTcKPoBrkyAc8oc42rzeIKY3uKX5f0PyiPCt0yQBSqV3zUvUrS1HyGjaPG1lhm+QLPQfMjlaAC3BFeiymHnnVtJGw7GDVzmwgdf9kCVI3oQnrDNE6cpaKwc/zVVRlWDHjEMxPCnASdrYX16NdU/EPwYKiyl5q+GqZF98RwqI4Fa6UhJEnc/QsU9GtU18pgMYcIrAv3NISoi3CihynDc5vP6xocPxMu3WjCtDTtmzd4wlb24GgNkO4uCWTEO6URVtx2a7NklWMfYma+Smu6mm0GXVnmhQLdgvwFCLnD6EnsFMRYMSz0U8TW5qeGWsQejzRfUqYbVVk9tzx93YMOP5LkQ4cQH8sOlZAOSbjJ/i3hXJ2R05j5szg4swv6Kmk=
   file: 
     - "dist/franc-bin-linux"
+    - "dist/franc-bin-macos"
+    - "dist/franc-bin-win.exe"
   on:
     repo: avvertix/franc-bin
     tags: true
