@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/avvertix/franc-bin.svg?branch=master)](https://travis-ci.org/avvertix/franc-bin)
+[![Build Status](https://travis-ci.com/avvertix/franc-bin.svg?branch=master)](https://travis-ci.com/avvertix/franc-bin)
 
 # Franc as Binary
 
