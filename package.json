@@ -1,17 +1,21 @@
 {
   "name": "franc-bin",
-  "version": "0.1.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/avvertix/franc-bin"
+  },
+  "version": "0.2.0",
   "description": "Franc CLI... as a binary file",
   "main": "node_modules/franc-cli/index.js",
   "bin": "node_modules/franc-cli/index.js",
   "author": "Alessio Vertemati",
   "license": "MIT",
   "dependencies": {
-    "franc": "^3.1.1",
-    "franc-cli": "^3.0.1"
+    "franc": "^4.0.0",
+    "franc-cli": "^5.0.0"
   },
   "devDependencies": {
-    "pkg": "~4.2.0"
+    "pkg": "~4.3.7"
   },
   "scripts": {
     "run": "franc",
@@ -22,9 +26,9 @@
       "package.json"
     ],
     "targets": [
-      "node8-macos-x64",
-      "node8-linux-x64",
-      "node8-win-x64"
+      "node10-macos-x64",
+      "node10-linux-x64",
+      "node10-win-x64"
     ]
   }
 }

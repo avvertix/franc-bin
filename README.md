@@ -48,7 +48,7 @@ $ franc --blacklist por,glg "O Brasil caiu 26 posições"
 
 ## Supported languages
 
-Support 186 languages. See [Franc supported languages for more info](https://github.com/wooorm/franc/tree/3.1.1/packages/franc#support).
+Support 186 languages. See [Franc supported languages for more info](https://github.com/wooorm/franc/tree/franc%404.0.0/packages/franc#support).
 
 > Franc can support more than 380 languages, but I this package stops at 186
 

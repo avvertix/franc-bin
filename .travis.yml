@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - '8'
+  - '10'
 
 notifications:
   email:
@@ -8,10 +8,11 @@ notifications:
 
 
 install:
-  - travis_retry npm install
+  - travis_retry npm ci
 
 script:
-  - ls
+  - npm run production
+  - ./dist/franc-bin-linux "let's try the build with a simple string"
 
 before_deploy: npm run production
 
