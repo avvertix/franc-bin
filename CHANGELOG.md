@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.2.0] - 2019-02-12
+
+- Updated franc to version 4.0.0
+- Updated franc-cli to version 5.0.0
+- Switched to use Node 10 for distribution
+
 ## [0.1.0] - 2017-11-08
 
 ### Added
