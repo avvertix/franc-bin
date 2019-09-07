@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/avvertix/franc-bin"
   },
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Franc CLI... as a binary file",
   "main": "node_modules/franc-cli/index.js",
   "bin": "node_modules/franc-cli/index.js",
