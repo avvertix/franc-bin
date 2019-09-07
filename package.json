@@ -1,8 +1,8 @@
 {
   "name": "franc-bin",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/avvertix/franc-bin"
+    "type": "git",
+    "url": "https://github.com/avvertix/franc-bin"
   },
   "version": "0.2.0",
   "description": "Franc CLI... as a binary file",
@@ -11,11 +11,11 @@
   "author": "Alessio Vertemati",
   "license": "MIT",
   "dependencies": {
-    "franc": "^4.0.0",
-    "franc-cli": "^5.0.0"
+    "franc": "^4.1.0",
+    "franc-cli": "^5.1.0"
   },
   "devDependencies": {
-    "pkg": "~4.3.7"
+    "pkg": "^4.4.0"
   },
   "scripts": {
     "run": "franc",

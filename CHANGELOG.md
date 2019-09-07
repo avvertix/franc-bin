@@ -2,10 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/0.3.0/) 
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+
+### Changed
+
+- Update franc to version 4.1.0
+- Update franc-cli to version 5.1.0
+- `--whitelist` option renamed to `--only` as per [franc 4.1.0 changelog](https://github.com/wooorm/franc/releases/tag/franc%404.1.0)
+- `--blacklist` option renamed to `--ignore` as per [franc 4.1.0 changelog](https://github.com/wooorm/franc/releases/tag/franc%404.1.0)
 
 ## [0.2.0] - 2019-02-12
 
