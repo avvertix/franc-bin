@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Update franc-cli to version 5.1.0
 - `--whitelist` option renamed to `--only` as per [franc 4.1.0 changelog](https://github.com/wooorm/franc/releases/tag/franc%404.1.0)
 - `--blacklist` option renamed to `--ignore` as per [franc 4.1.0 changelog](https://github.com/wooorm/franc/releases/tag/franc%404.1.0)
+- Switched to use Node 12 for distribution
 
 ## [0.2.0] - 2019-02-12
 
