@@ -17,10 +17,10 @@ where `<string>` is the text to recognize
 Options:
 
 - `-h`, `--help` output usage information
-- `-v`, `--version` output Franc version number
+- `-v`, `--version` output Franc-Cli version number
 - `-m`, `--min-length <number>` minimum length to accept
-- `-w`, `--whitelist <string>` allow specific languages
-- `-b`, `--blacklist <string>` disallow specific languages
+- `-o`, `--only <string>` allow specific languages
+- `-i`, `--ignore <string>` disallow specific languages
 - `-a`, `--all` display all guesses with probability score
 
 **Usage examples**
@@ -39,18 +39,18 @@ $ echo "এটি একটি ভাষা একক IBM স্ক্রিপ�
 # ben
 ```
 
-blacklist certain languages
+ignore certain languages
 
 ```bash
-$ franc --blacklist por,glg "O Brasil caiu 26 posições"
+$ franc --ignore por,glg "O Brasil caiu 26 posições"
 # src
 ```
 
 ## Supported languages
 
-Support 186 languages. See [Franc supported languages for more info](https://github.com/wooorm/franc/tree/franc%404.0.0/packages/franc#support).
+Support 187 languages. See [Franc supported languages for more info](https://github.com/wooorm/franc/tree/franc@4.1.0/packages/franc#support).
 
-> Franc can support more than 380 languages, but I this package stops at 186
+> Franc can support more than 380 languages, but this packaged version stops at 187
 
 ## Compile from source
 
