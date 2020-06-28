@@ -11,11 +11,11 @@
   "author": "Alessio Vertemati",
   "license": "MIT",
   "dependencies": {
-    "franc": "^4.1.0",
-    "franc-cli": "^5.1.0"
+    "franc": "^5.0.0",
+    "franc-cli": "^6.0.1"
   },
   "devDependencies": {
-    "pkg": "^4.4.0"
+    "pkg": "^4.4.8"
   },
   "scripts": {
     "run": "franc",
