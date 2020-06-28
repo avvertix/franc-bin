@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Update franc to version 5.0.0
+- Update franc-cli to version 6.0.1
+
 ## [1.0.0] - 2019-09-07
 
 ### Changed
