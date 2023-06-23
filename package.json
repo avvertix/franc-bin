@@ -12,10 +12,10 @@
   "license": "MIT",
   "dependencies": {
     "franc": "^5.0.0",
-    "franc-cli": "^6.0.1"
+    "franc-cli": "^8.0.0"
   },
   "devDependencies": {
-    "pkg": "^4.4.8"
+    "pkg": "^5.8.1"
   },
   "scripts": {
     "run": "franc",
