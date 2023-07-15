@@ -37,35 +37,10 @@ jobs:
         npm run production
         ./dist/franc-bin-linux --help
 
-    - name: Upload Linux build
-      uses: actions/upload-release-asset@v1
+    - name: Upload Release assets
       if: github.event_name == 'release'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ./dist/video-processing-cli-linux
-        asset_name: video-processing-cli-linux
-        asset_content_type: application/octet-stream
+      run: |
+        gh release upload $GITHUB_REF ./dist/franc-bin-linux ./dist/franc-bin-macos ./dist/franc-bin-win.exe
 
-    - name: Upload Windows build
-      uses: actions/upload-release-asset@v1
-      if: github.event_name == 'release'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ./dist/video-processing-cli-win.exe
-        asset_name: video-processing-cli-win.exe
-        asset_content_type: application/octet-stream
-
-    - name: Upload MacOS build
-      uses: actions/upload-release-asset@v1
-      if: github.event_name == 'release'
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: ./dist/video-processing-cli-macos
-        asset_name: video-processing-cli-macos
-        asset_content_type: application/octet-stream
