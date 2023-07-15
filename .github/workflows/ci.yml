@@ -42,6 +42,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        echo ${{ github.event.release.tag_name }}
         gh release upload ${{ github.event.release.tag_name }} ./dist/franc-bin-linux ./dist/franc-bin-macos ./dist/franc-bin-win.exe
 
