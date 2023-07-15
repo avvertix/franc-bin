@@ -1,0 +1,46 @@
+name: Release binaries
+
+on: 
+  push:
+    branches: 
+      - "master"
+  pull_request:
+    types: [opened, synchronize, reopened]
+  release:
+    types: [published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 1
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+  
+    - name: Cache dependencies
+      uses: actions/cache@v3
+      with:
+        path: |
+          .npm-cache
+          ./bin/
+        key: dependencies-js-12-${{ hashFiles('package.json') }}
+
+    - name: Prepare build
+      run: |
+        npm config set cache .npm-cache
+        npm ci
+        npm run production
+        ./dist/franc-bin-linux --help
+
+    - name: Upload Release assets
+      if: github.event_name == 'release'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        gh release upload ${{ github.event.release.tag_name }} ./dist/franc-bin-linux ./dist/franc-bin-macos ./dist/franc-bin-win.exe
+
