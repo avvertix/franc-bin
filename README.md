@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/avvertix/franc-bin.svg?branch=master)](https://travis-ci.com/avvertix/franc-bin)
+[![Release binaries](https://github.com/avvertix/franc-bin/actions/workflows/ci.yml/badge.svg)](https://github.com/avvertix/franc-bin/actions/workflows/ci.yml)
 
 # Franc as Binary
 
@@ -56,10 +56,10 @@ Support 187 languages. See [Franc supported languages for more info](https://git
 
 **Requirements:**
 
-- NodeJS (8.0 or newer)
+- NodeJS (16.0 or newer)
 - NPM
 
-> Yes, it is a Javascript project, but thanks to [PKG, by Zeit](https://github.com/zeit/pkg) can be packed into a real executable.
+> Yes, it is a Javascript project, but thanks to [PKG, by Vercel](https://github.com/vercel/pkg) can be packed into a real executable.
 
 **Generate the binaries**
 
@@ -67,7 +67,7 @@ Download all the dependencies
 
 ```bash
 # pull the dependencies
-npm install
+npm ci
 ```
 Now generate the binaries for MacOS, Windows and Linux in the `./dist` folder
 
@@ -82,4 +82,4 @@ Contributions are welcomed, just make a pull request.
 
 ## License
 
-This project is licensed under the MIT license, see `LICENSE.txt`.
+This project is licensed under the [`MIT` license](./LICENSE.txt).
