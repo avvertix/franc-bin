@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
+- Update franc to version 6.2.0
+- Update franc-cli to version 8.0.0
+- Switch to [`@yao-pkg/pkg`](https://github.com/yao-pkg/pkg) as [`pkg`](https://github.com/vercel/pkg) is deprecated.
+- Switch to Node 18 for distribution
+
+## [1.0.1] - 2023-07-15
+
 - Update franc to version 5.0.0
 - Update franc-cli to version 6.0.1
 
