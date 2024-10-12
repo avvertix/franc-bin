@@ -13,22 +13,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 1
 
     - name: Setup Node.js
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
-        node-version: 16
+        node-version: 18
   
     - name: Cache dependencies
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: |
           .npm-cache
           ./bin/
-        key: dependencies-js-12-${{ hashFiles('package.json') }}
+        key: dependencies-js-${{ hashFiles('package.json') }}
 
     - name: Prepare build
       run: |
